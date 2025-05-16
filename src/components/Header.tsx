@@ -30,13 +30,6 @@ function Header() {
           </a>
           <a
             href="#"
-            id="contact"
-            className="contact py-7 px-5 font-semibold text-brand hover:text-muted hover:bg-secondary"
-          >
-            Contact Us
-          </a>
-          <a
-            href="#"
             id="blog"
             className="blog py-7 px-5 font-semibold text-brand hover:text-muted hover:bg-secondary"
           >
@@ -48,6 +41,13 @@ function Header() {
             className="booking py-7 px-5 font-semibold text-brand hover:text-muted hover:bg-secondary"
           >
             Booking A Meeting
+          </a>
+          <a
+            href="#"
+            id="contact"
+            className="contact py-7 px-5 font-semibold text-brand hover:text-muted hover:bg-secondary"
+          >
+            Contact Us
           </a>
         </div>
 
