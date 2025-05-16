@@ -10,58 +10,11 @@
   --color-accent: #e0d575;       /* Accent/highlight (badges, hover states, icons) */
   --color-border: #eaeaea;       /* For lines, cards, dividers */
 
-
-
-  /* --color-primary: #800000;  */
-  /* Maroon */
-  /* --color-accent: #4B0082;    */
-  /* Dark Purple */
-  /* --color-highlight: #1E90FF;     */
-  /* Blue (Stars) */
-  /* --color-muted: #8B4513;         */
-  /* Brown (Optional) */
-
-  /* --color-pop1: #AA2339; */
-  /* --color-pop3: #6B2C47; */
-  /* --color-pop4: #8D3545; */
-  /* --color-pop5: #E0D575; */
-
-  /* (in "T&J" and "TRAVELING"):  */
-  /* --color-Lighter-Red: #C42133;       */
-  /* (in airplane trail):  */
-  /* --color-Dark-Blue: #192A7B;         */
-  /* (in "J" and stars):  */
-  /* (in "CONSULTANTS" and line):  */
-
   /* Font Variables */
   /* --font-base:  */
   /* --font-sans: ui-sans-serif, system-ui, sans-serif; */
   /* --font-serif: Georgia, Cambria, 'Times New Roman', serif; */
 }
-
-/* #AA2339 */
-/* #011189 */
-/* #6B2C47 */
-/* #8D3545 */
-/* #E0D575 */
-
-/* 
-Dark Red (in "T&J" and "TRAVELING"): #800026
-Lighter Red (in airplane trail): #C42133
-Dark Blue (in "J" and stars): #192A7B
-Black (in "CONSULTANTS" and line): #000000
-White (background): #FFFFFF
- */
-
-/* Dark Brown (Background): #4A2318
-Light Brown (Suitcase): #C19A6B
-Off-White (Airplane Body/Text Background): #F5F5F5
-Dark Blue (Text Headings): #29235C
-Light Blue (Airplane Tail): #56A5C7
-Orange (Contact Info Background): #F2A33C
-Gray (Airplane): #808080
-White (Text/Clouds): #FFFFFF
-Dark Green (Text): #006400 */
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
