@@ -2,12 +2,15 @@
 
 @theme {
   /* Color Variables */
-  --color-accent: #011189;
-  --color-primary: #800026;
-  --color-Black: #000000;
-  --color-background: #ffffff; /* (background):  */
-  --color-muted: #cbb68f; /* T&J heading */
-  --color-highlight: #e0d575; /* T&J heading */
+  --color-brand: #800026;        /* Primary brand color (use for main CTAs, titles, logo accents) */
+  --color-secondary: #011189;    /* Secondary brand color (use for emphasis, nav links, strong text) */
+  --color-background: #ffffff;   /* Base background */
+  --color-surface: #f9f9f9;      /* Section backgrounds (optional alt background for contrast) */
+  --color-muted: #cbb68f;        /* Muted text color (section subtitles, form labels) */
+  --color-accent: #e0d575;       /* Accent/highlight (badges, hover states, icons) */
+  --color-border: #eaeaea;       /* For lines, cards, dividers */
+
+
 
   /* --color-primary: #800000;  */
   /* Maroon */
