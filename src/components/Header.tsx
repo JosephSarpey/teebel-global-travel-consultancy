@@ -6,8 +6,8 @@ function Header() {
       <header className="flex justify-between items-center" id="header">
         {/* Logo */}
         <div className="name-logo w-[20%]">
-          <a href="#" className="logo flex">
-            <img src={logo} alt="logo" className="w-20" />
+          <a href="#" className="logo flex w-20 bg-amber-500">
+            <img src={logo} alt="logo" className="" />
             <span></span>
           </a>
         </div>
@@ -17,35 +17,35 @@ function Header() {
           <a
             href="#"
             id="destinations"
-            className="destinations py-7 px-5 font-semibold text-brand hover:text-muted hover:bg-secondary"
+            className="destinations py-7 px-5 font-semibold text-brand hover:text-muted"
           >
             Destinations
           </a>
           <a
             href="#"
             id="about"
-            className="about py-7 px-5 font-semibold text-brand hover:text-muted hover:bg-secondary"
+            className="about py-7 px-5 font-semibold text-brand hover:text-muted"
           >
             About Us
           </a>
           <a
             href="#"
             id="blog"
-            className="blog py-7 px-5 font-semibold text-brand hover:text-muted hover:bg-secondary"
+            className="blog py-7 px-5 font-semibold text-brand hover:text-muted"
           >
             Blog
           </a>
           <a
             href="#"
             id="booking"
-            className="booking py-7 px-5 font-semibold text-brand hover:text-muted hover:bg-secondary"
+            className="booking py-7 px-5 font-semibold text-brand hover:text-muted"
           >
             Booking A Meeting
           </a>
           <a
             href="#"
             id="contact"
-            className="contact py-7 px-5 font-semibold text-brand hover:text-muted hover:bg-secondary"
+            className="contact py-7 px-5 font-semibold text-brand hover:text-muted"
           >
             Contact Us
           </a>
