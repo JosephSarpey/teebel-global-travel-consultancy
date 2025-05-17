@@ -2,13 +2,13 @@
 
 @theme {
   /* Color Variables */
-  --color-brand: #800026;        /* Primary brand color (use for main CTAs, titles, logo accents) */
-  --color-secondary: #011189;    /* Secondary brand color (use for emphasis, nav links, strong text) */
-  --color-background: #ffffff;   /* Base background */
-  --color-surface: #f9f9f9;      /* Section backgrounds (optional alt background for contrast) */
-  --color-muted: #cbb68f;        /* Muted text color (section subtitles, form labels) */
-  --color-accent: #e0d575;       /* Accent/highlight (badges, hover states, icons) */
-  --color-border: #eaeaea;       /* For lines, cards, dividers */
+  --color-brand: #800026; /* Primary brand color (use for main CTAs, titles, logo accents) */
+  --color-secondary: #011189; /* Secondary brand color (use for emphasis, nav links, strong text) */
+  --color-background: #ffffff; /* Base background */
+  --color-surface: #f9f9f9; /* Section backgrounds (optional alt background for contrast) */
+  --color-muted: #cbb68f; /* Muted text color (section subtitles, form labels) */
+  --color-accent: #e0d575; /* Accent/highlight (badges, hover states, icons) */
+  --color-border: #eaeaea; /* For lines, cards, dividers */
 
   /* Font Variables */
   /* --text-base: 0.875rem; */
@@ -16,20 +16,71 @@
   /* --text-section-heading: 2rem; */
   /* line-height: 0.6875rem; */
 
-  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-serif: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
   --font-script: Great Vibes, cursive;
 }
 
 /* :root { */
-  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
-  /* line-height: 1.5; */
-  /* font-weight: 400; */
+/* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
+/* line-height: 1.5; */
+/* font-weight: 400; */
 
-  /* font-synthesis: none; */
-  /* text-rendering: optimizeLegibility; */
-  /* -webkit-font-smoothing: antialiased; */
-  /* -moz-osx-font-smoothing: grayscale; */
+/* font-synthesis: none; */
+/* text-rendering: optimizeLegibility; */
+/* -webkit-font-smoothing: antialiased; */
+/* -moz-osx-font-smoothing: grayscale; */
 /* } */
 
+/* .hero {
+  background-image: url(../src/assets/images/travel-with-passport.png);
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
+
+.hamburger {
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translate(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}

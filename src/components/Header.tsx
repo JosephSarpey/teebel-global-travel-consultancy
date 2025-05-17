@@ -1,58 +1,121 @@
+import React, { useState } from "react";
 import logo from "../assets/images/t&j-logo-cropped.jpg";
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setMenuOpen((prev) => !prev);
+  };
+
   return (
     <>
-      <header className="flex justify-between items-center" id="header">
+      <header
+        id="header"
+        className="container m-auto relative items flex justify-between items-center p-3 md:p-0"
+      >
         {/* Logo */}
-        <div className="name-logo w-[20%]">
-          <a href="#" className="logo flex w-20 bg-amber-500">
+        <div className="name-logo md:w-[20%]">
+          <a href="#" className="logo relative flex w-20">
             <img src={logo} alt="logo" className="" />
             <span></span>
           </a>
         </div>
 
+        {/* Hamburger Button */}
+        <div
+          id="menu-btn"
+          className={`hamburger md:hidden w-6 h-6 block hover:cursor-pointer focus:outline-none ${
+            menuOpen ? "open" : ""
+          }`}
+          onClick={handleMenuToggle}
+        >
+          <span className="hamburger-top"></span>
+          <span className="hamburger-middle"></span>
+          <span className="hamburger-bottom"></span>
+        </div>
+
+        {/* Navigation Menu for Mobile */}
+        <div
+          id="menu"
+          className={`mobile-nav-menu absolute mt-80 w-full right-0 px-3 flex-col items-center justify-center border-t-border text-center bg-background ${
+            menuOpen ? "flex" : "hidden"
+          }`}
+          onClick={handleMenuToggle}
+        >
+          <a
+            href="#"
+            className="destinations px-5 py-3 border-t-2 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-muted text-center"
+          >
+            Destinations
+          </a>
+          <a
+            href="#"
+            className="about px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-muted text-center"
+          >
+            About Us
+          </a>
+          <a
+            href="#"
+            className="blog px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-muted text-center"
+          >
+            Blog
+          </a>
+          <a
+            href="#"
+            className="booking px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-muted text-center"
+          >
+            Booking A Meeting
+          </a>
+          <a
+            href="#"
+            className="contact px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-muted text-center"
+          >
+            Contact Us
+          </a>
+        </div>
+
         {/* Navigation Menu */}
-        <div className="nav-menu flex justify-between">
+        <div className="desktop-nav-menu hidden md:flex md:justify-between ">
           <a
             href="#"
             id="destinations"
-            className="destinations py-7 px-5 font-semibold text-brand hover:text-muted"
+            className="destinations px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-muted"
           >
             Destinations
           </a>
           <a
             href="#"
             id="about"
-            className="about py-7 px-5 font-semibold text-brand hover:text-muted"
+            className="about px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-muted"
           >
             About Us
           </a>
           <a
             href="#"
             id="blog"
-            className="blog py-7 px-5 font-semibold text-brand hover:text-muted"
+            className="blog px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-muted"
           >
             Blog
           </a>
           <a
             href="#"
             id="booking"
-            className="booking py-7 px-5 font-semibold text-brand hover:text-muted"
+            className="booking px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-muted"
           >
             Booking A Meeting
           </a>
           <a
             href="#"
             id="contact"
-            className="contact py-7 px-5 font-semibold text-brand hover:text-muted"
+            className="contact px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-muted"
           >
             Contact Us
           </a>
         </div>
 
         {/* Other Nav Items */}
-        <div className="flex items-center justify-end gap-10 w-[20%]">
+        <div className="hidden md:flex md:items-center md:justify-end md:gap-10 md:w-[20%]">
           <div className="language relative">
             <button
               type="button"
