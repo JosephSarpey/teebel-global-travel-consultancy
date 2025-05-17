@@ -47,31 +47,31 @@ function Header() {
           >
             <a
               href="#"
-              className="destinations px-5 py-3 border-t-2 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-muted text-center"
+              className="destinations px-5 py-3 border-t-2 border-t-border w-full md:py-7 md:px-5 font-semibold text-secondary hover:text-brand text-center"
             >
               Destinations
             </a>
             <a
               href="#"
-              className="about px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-muted text-center"
+              className="about px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-secondary hover:text-brand text-center"
             >
               About Us
             </a>
             <a
               href="#"
-              className="blog px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-muted text-center"
+              className="blog px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-secondary hover:text-brand text-center"
             >
               Blog
             </a>
             <a
               href="#"
-              className="booking px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-muted text-center"
+              className="booking px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-secondary hover:text-brand text-center"
             >
               Booking A Meeting
             </a>
             <a
               href="#"
-              className="contact px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-muted text-center"
+              className="contact px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-secondary hover:text-brand text-center"
             >
               Contact Us
             </a>
@@ -82,35 +82,35 @@ function Header() {
             <a
               href="#"
               id="destinations"
-              className="destinations px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-muted"
+              className="destinations px-5 py-3 md:py-7 md:px-5 font-semibold text-secondary hover:text-brand"
             >
               Destinations
             </a>
             <a
               href="#"
               id="about"
-              className="about px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-muted"
+              className="about px-5 py-3 md:py-7 md:px-5 font-semibold text-secondary hover:text-brand"
             >
               About Us
             </a>
             <a
               href="#"
               id="blog"
-              className="blog px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-muted"
+              className="blog px-5 py-3 md:py-7 md:px-5 font-semibold text-secondary hover:text-brand"
             >
               Blog
             </a>
             <a
               href="#"
               id="booking"
-              className="booking px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-muted"
+              className="booking px-5 py-3 md:py-7 md:px-5 font-semibold text-secondary hover:text-brand"
             >
               Booking A Meeting
             </a>
             <a
               href="#"
               id="contact"
-              className="contact px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-muted"
+              className="contact px-5 py-3 md:py-7 md:px-5 font-semibold text-secondary hover:text-brand"
             >
               Contact Us
             </a>
@@ -165,7 +165,7 @@ function Header() {
         </div>
       </header>
       {/* Spacer to prevent content from being hidden behind the fixed header */}
-      <div className="h-17 md:h-20 bg-brand"></div>
+      <div className="h-17 md:h-20"></div>
     </>
   );
 }
