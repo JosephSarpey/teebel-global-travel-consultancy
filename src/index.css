@@ -12,8 +12,8 @@
 
   /* Font Variables */
   /* --text-base: 0.875rem; */
-  /* --text-section-title: 0.75rem; */
-  /* --text-section-heading: 2rem; */
+  --text-section-title: 18px;
+  --text-section-subtitle: 45px;
   /* line-height: 0.6875rem; */
 
   --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
@@ -86,23 +86,23 @@
 }
 
 /* Hero section background styles */
-.hero {
+/* .hero {
   background-image: url(../src/assets/images/traveler-at-airport.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
   min-height: 60vh;
-}
+} */
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
-  .hero {
+/* @media (max-width: 768px) {
+  .hero img {
     background-size: contain;
     min-height: 40vh;
     padding: 2rem 1rem; 
-  }
-}
+  } */
+/* } */
 
-.hero {
+/* .hero {
   background-color: var(--color-surface);
-}
+} */

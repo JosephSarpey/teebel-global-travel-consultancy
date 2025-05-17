@@ -16,7 +16,6 @@ function Header() {
         className="fixed top-0 left-0 w-full z-50 bg-background"
       >
         <div className="container m-auto flex justify-between items-center p-3 md:p-0">
-          
           {/* Logo */}
           <div className="name-logo md:w-[20%]">
             <a href="#" className="logo relative flex w-20">
@@ -158,10 +157,7 @@ function Header() {
               </ul>
             </div>
             <div className="button">
-              <Button
-                type="button"
-                variant="primary" size = "sm"
-              >
+              <Button type="button" variant="primary" size="sm">
                 Get Started
               </Button>
             </div>
@@ -169,7 +165,7 @@ function Header() {
         </div>
       </header>
       {/* Spacer to prevent content from being hidden behind the fixed header */}
-      <div className="h-17 md:h-20"></div>
+      <div className="h-17 md:h-20 bg-brand"></div>
     </>
   );
 }
