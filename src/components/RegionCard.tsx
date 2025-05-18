@@ -58,9 +58,14 @@ export default function RegionCard({
               ))}
             </ul>
           ) : (
-            <p className="text-sm text-muted-foreground italic opacity-80 transition-all duration-300">
-              Hover to see countries
-            </p>
+            <div className="text-muted">
+              <p className="hidden sm:block text-sm text-muted-foreground italic opacity-80 transition-all duration-300">
+                Hover to see countries
+              </p>
+              <p className="sm:hidden text-sm text-muted-foreground italic opacity-80 transition-all duration-300">
+                Tap to see countries
+              </p>
+            </div>
           )}
         </div>
       </div>
