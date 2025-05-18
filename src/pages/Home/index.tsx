@@ -3,7 +3,7 @@ import Footer from "../../components/Footer";
 import Hero from "./Hero";
 import AboutPreview from "./AboutPreview";
 import ServicesPreview from "./ServicesPreview";
-import DestinationHighLights from "./DestinationsHighLight";
+import DestinationsHighLight from "./DestinationsHighLight";
 import Testimonials from "./Testimonials";
 import ContactUs from "./ContactUs";
 
@@ -14,7 +14,7 @@ function HomePage() {
       <Hero />
       <AboutPreview />
       <ServicesPreview />
-      <DestinationHighLights />
+      <DestinationsHighLight />
       <Testimonials />
       <ContactUs />
       <Footer />
