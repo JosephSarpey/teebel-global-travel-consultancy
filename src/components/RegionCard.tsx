@@ -16,7 +16,7 @@ export default function RegionCard({
 
   return (
     <Card
-      className={`w-[290px] p-0 cursor-pointer relative overflow-hidden shadow-lg border-0 transition-all duration-300 bg-background transform ${
+      className={`w-[290px] m-auto p-0 cursor-pointer relative overflow-hidden shadow-lg border-0 transition-all duration-300 bg-background transform ${
         showCountries ? "scale-105 z-20" : ""
       }`}
       style={{ willChange: "transform" }}

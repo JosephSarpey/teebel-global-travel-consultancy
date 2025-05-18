@@ -1,8 +1,8 @@
 import RegionCard from "../../components/RegionCard";
-import asiaImg from "../../assets/images/31202.jpg";
-import europeImg from "../../assets/images/41609.jpg";
+import asiaImg from "../../assets/images/asia.jpg";
+import europeImg from "../../assets/images/europe.jpg";
 import africaImg from "../../assets/images/42938.jpg";
-import naImg from "../../assets/images/11429595.png";
+import naImg from "../../assets/images/north-america.jpg";
 
 const regions = [
   {
