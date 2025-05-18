@@ -46,7 +46,10 @@ function ServicesPreview() {
             <h1 className="text-secondary font-semibold text-sm text-center bg-muted rounded-lg p-2">
               Our Services
             </h1>
-            <h2 className="text-brand font-bold text-3xl md:text-4xl text-center">
+            <h2 className="text-brand font-bold text-2xl md:text-4xl text-center md:hidden">
+              Expert Travel Support
+            </h2>
+            <h2 className="hidden text-brand font-bold text-3xl md:text-4xl text-center md:block">
               Your Journey, Our Expertise.
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -56,14 +59,14 @@ function ServicesPreview() {
             </div>
             <div className="flex flex-row gap-5">
               <div className="button">
-                <Button variant="outline" size="md">
+                <Button variant="outline" size="responsive">
                   Explore All Services
                 </Button>
               </div>
               <div className="button">
                 <Button
                   variant="primary"
-                  size="md"
+                  size="responsive"
                   className="hover:bg-muted hover:text-secondary"
                 >
                   Contact Us for a Custom Plan

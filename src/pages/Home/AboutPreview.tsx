@@ -8,11 +8,9 @@ function AboutPreview() {
       <SectionSplit
         title="About Us"
         subtitle="WELCOME TO T&J"
-        text="At T&J Traveling Consultancy, we believe that exploring the world should be exciting — not overwhelming. That’s why we’re committed to making your travel and documentation journey as smooth and stress-free as possible.
-        From visa assistance and ticketing to document verification and work permits, our experienced team provides tailored support every step of the way. Whether you're applying for a passport, securing a travel insurance plan, or preparing documents for international employment, we guide you with clarity, reliability, and care
-        With strong values of trust, transparency, and excellence, we’ve helped countless individuals take confident steps toward their global goals. Your journey starts here — and we're with you all the way."
-        // imgSrc={AboutImage}
+        text="T&J Traveling Consultancy makes your travel and documentation journey smooth and stress-free. From visas and tickets to verified documents and work permits, our expert team guides you every step of the way. Start your global adventure with confidence — your journey begins here."
         imgSrc={AboutImage2}
+        // imgSrc={AboutImage}
         // mdReverse
         // smReverse
       />
