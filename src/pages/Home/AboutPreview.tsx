@@ -1,5 +1,5 @@
 import SectionSplit from "../../components/SectionSplit";
-import AboutImage from "../../assets/images/global-document-exchange.png";
+// import AboutImage from "../../assets/images/global-document-exchange.png";
 import AboutImage2 from "../../assets/images/global-consultation.png";
 
 function AboutPreview() {
