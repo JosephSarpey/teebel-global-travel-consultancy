@@ -27,7 +27,7 @@ function SectionSplit({
           <div className="m-auto flex flex-col items-center w-full gap-5 h-full px-5 py-10 md:px-10 md:py-15">
             <h1 className={`text-secondary font-semibold text-sm text-center bg-muted rounded-lg p-2`}>{title}</h1>
             <h2 className={`text-brand font-bold text-2xl md:text-4xl text-center`}>{subtitle}</h2>
-            <p className={`text-muted font-semibold text-xs sm:text-lg text-center`}>{text}</p>
+            <p className={`text-muted font-semibold text-base md:text-lg text-center`}>{text}</p>
           </div>
         </div>
 

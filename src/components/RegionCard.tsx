@@ -45,7 +45,7 @@ export default function RegionCard({
           {region}
         </h3>
         {/* Animated country list */}
-        <div className="h-[120px] flex items-center justify-center w-full">
+        <div className="h-[130px] sm:h-[120px] flex items-center justify-center w-full">
           {showCountries ? (
             <ul className="flex flex-wrap gap-2 justify-center animate-fade-in">
               {countries.map((country, i) => (
