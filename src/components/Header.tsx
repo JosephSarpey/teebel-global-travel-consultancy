@@ -67,7 +67,7 @@ function Header() {
               href="#"
               className="booking px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-secondary hover:text-brand text-center"
             >
-              Booking A Meeting
+              Book A Meeting
             </a>
             <a
               href="#"
@@ -105,7 +105,7 @@ function Header() {
               id="booking"
               className="booking px-5 py-3 md:py-7 md:px-5 font-semibold text-secondary hover:text-brand"
             >
-              Booking A Meeting
+              Book A Meeting
             </a>
             <a
               href="#"
@@ -121,7 +121,7 @@ function Header() {
             <div className="language relative">
               <button
                 type="button"
-                className="flex items-center px-2 py-1 rounded hover:bg-muted focus:outline-none"
+                className="flex items-center text-brand px-2 py-1 rounded hover:bg-muted focus:outline-none"
               >
                 EN
                 <svg

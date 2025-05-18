@@ -1,4 +1,4 @@
-function Testimonials() {
+function ContactUs() {
   return (
     <>
       <section></section>
@@ -6,4 +6,4 @@ function Testimonials() {
   );
 }
 
-export default Testimonials;
+export default ContactUs;
