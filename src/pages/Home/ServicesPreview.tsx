@@ -57,19 +57,23 @@ function ServicesPreview() {
                 <ServiceCard key={idx} {...service} />
               ))}
             </div>
-            <div className="flex flex-row gap-5">
+            <div className="flex flex-col gap-3 w-full sm:flex-row sm:justify-center sm:gap-5">
               <div className="button">
-                <Button variant="outline" size="responsive">
-                  Explore All Services
+                <Button
+                  variant="outline"
+                  size="responsive"
+                  className="w-full sm:w-auto"
+                >
+                  Explore Services
                 </Button>
               </div>
               <div className="button">
                 <Button
                   variant="primary"
                   size="responsive"
-                  className="hover:bg-muted hover:text-secondary"
+                  className="w-full sm:w-auto hover:bg-muted hover:text-secondary"
                 >
-                  Contact Us for a Custom Plan
+                  Contact Us
                 </Button>
               </div>
             </div>

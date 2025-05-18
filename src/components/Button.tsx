@@ -15,7 +15,7 @@ const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   const base =
-    "rounded-2xl font-semibold transition-all duration-200 inline-block cursor-pointer";
+    "rounded-2xl font-semibold transition-all duration-200 block cursor-pointer";
 
   const variants = {
     primary: "text-white bg-brand hover:opacity-90",
