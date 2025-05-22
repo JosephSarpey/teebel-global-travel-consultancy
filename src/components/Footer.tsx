@@ -1,5 +1,5 @@
 import { Facebook, Twitter, Instagram, Mail } from "lucide-react";
-import {FaWhatsapp} from "react-icons/fa";
+import {FaWhatsapp, FaTiktok} from "react-icons/fa" 
 
 function Footer() {
   return (
@@ -41,6 +41,10 @@ function Footer() {
               <a href="https://wa.me/+233556536108" target="_blank" rel="noopener noreferrer"
               aria-label="WhatsApp" className="text-brand hover:text-secondary">
               <FaWhatsapp className="w-5 h-5" />
+              </a>
+              <a href="tiktok.com" target="_blank" rel="noopener noreferrer"
+              aria-label="Tiktok" className="text-brand hover:text-secondary">
+              <FaTiktok className="w-5 h-5" />
               </a>
           </div>
         </div>

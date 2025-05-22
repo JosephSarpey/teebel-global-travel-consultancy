@@ -6,7 +6,7 @@ import TestimonialImgMobile from "../../assets/images/travel-world-mini.jpg";
 const testimonies = [
   {
     title: "Joseph",
-    testify: "T&J made my travel process seamless and stress-free!",
+    testify: "TeeBel Global Travel Consultants made my travel process seamless and stress-free!",
   },
   {
     title: "Emmanuel",
