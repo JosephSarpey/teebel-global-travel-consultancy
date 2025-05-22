@@ -1,4 +1,4 @@
-# T&J Travel Consultancy
+# TeeBel Global Travel Consultants
 
 A modern, responsive web application for T&J Travel Consultancy, built with React, TypeScript, Tailwind CSS, and Vite.
 
@@ -54,4 +54,4 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 ---
 
-**T&J Travel Consultancy** – Your trusted partner in travel and documentation.
+**TeeBel Global Travel Consultants** – Your trusted partner in travel and documentation.
