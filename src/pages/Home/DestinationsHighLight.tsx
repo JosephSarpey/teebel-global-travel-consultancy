@@ -52,7 +52,7 @@ const regions = [
 
 function DestinationsHighLight() {
   return (
-    <section className="py-12 bg-muted/10">
+    <section className="py-15 pt-30 bg-muted/10">
       <div className="m-auto flex flex-col items-center max-w-full gap-5 h-full px-5 md:px-10">
         <h1 className="text-secondary font-semibold text-sm text-center bg-muted rounded-lg p-2">
           Destinations We Offer

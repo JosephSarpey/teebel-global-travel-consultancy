@@ -1,6 +1,7 @@
 import TestimonialItem from "../../components/TestimonialItem";
 import SectionSplit from "../../components/SectionSplit";
-import TestimonialImg from "../../assets/images/41609.jpg";
+import TestimonialImg from "../../assets/images/portrait-young-school-student-square.jpg";
+import TestimonialImgMobile from "../../assets/images/travel-world-mini.jpg";
 
 const testimonies = [
   {
@@ -26,7 +27,7 @@ function Testimonials() {
         title="Testimonials"
         subtitle="What Our Clients Say"
         imgSrc={TestimonialImg}
-        imgSrcMobile={TestimonialImg}
+        imgSrcMobile={TestimonialImgMobile}
         mdReverse
         text=""
       >
