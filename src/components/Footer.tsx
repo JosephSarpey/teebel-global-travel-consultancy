@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Instagram, Mail } from "lucide-react";
+import {FaWhatsapp} from "react-icons/fa";
 
 function Footer() {
   return (
@@ -11,6 +12,7 @@ function Footer() {
             Your trusted partner for travel, documentation, and global opportunities. We make your journey smooth, secure, and memorable.
           </p>
         </div>
+
         {/* Links */}
         <div className="flex-1 flex flex-col gap-2">
           <span className="font-semibold text-secondary mb-1">Quick Links</span>
@@ -19,6 +21,7 @@ function Footer() {
           <a href="#" className="text-brand hover:text-secondary text-sm">Services</a>
           <a href="#" className="text-brand hover:text-secondary text-sm">Contact</a>
         </div>
+
         {/* Contact & Socials */}
         <div className="flex-1 flex flex-col gap-2">
           <span className="font-semibold text-secondary mb-1">Contact</span>
@@ -35,9 +38,14 @@ function Footer() {
             <a href="#" aria-label="Instagram" className="text-brand hover:text-secondary">
               <Instagram className="w-5 h-5" />
             </a>
+              <a href="https://wa.me/+233556536108" target="_blank" rel="noopener noreferrer"
+              aria-label="WhatsApp" className="text-brand hover:text-secondary">
+              <FaWhatsapp className="w-5 h-5" />
+              </a>
           </div>
         </div>
       </div>
+
       <div className="text-center text-xs text-muted py-4 border-t border-border bg-surface">
         &copy; {new Date().getFullYear()} TeeBel Global Travel Consultants. All rights reserved.
       </div>

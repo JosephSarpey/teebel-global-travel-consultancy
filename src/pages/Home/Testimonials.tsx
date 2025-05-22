@@ -5,11 +5,11 @@ import TestimonialImgMobile from "../../assets/images/travel-world-mini.jpg";
 
 const testimonies = [
   {
-    title: "Kojo",
+    title: "Joseph",
     testify: "T&J made my travel process seamless and stress-free!",
   },
   {
-    title: "Ama",
+    title: "Emmanuel",
     testify: "Professional and reliable service. Highly recommended!",
   },
   {
