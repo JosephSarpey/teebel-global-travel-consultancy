@@ -1,5 +1,5 @@
 import { Airplay, Briefcase, FileText, ShieldCheck } from "lucide-react";
-import ServiceCard from "../../components/ServiceCard";
+import SectionsCards from "../../components/SectionsCards";
 import Button from "../../components/Button";
 
 const services = [
@@ -41,7 +41,7 @@ function ServicesPreview() {
   return (
     <>
       <section className="py-10 md:py-15 bg-background">
-        <div className="max-w-5xl mx-auto px-4">
+        <div className="max-w-[80%] mx-auto px-4">
           <div className="m-auto flex flex-col items-center w-full gap-5 h-full px-5 md:px-10">
             <h1 className="text-secondary font-semibold text-sm text-center bg-muted rounded-lg p-2">
               Our Services
@@ -54,7 +54,7 @@ function ServicesPreview() {
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {services.map((service, idx) => (
-                <ServiceCard key={idx} {...service} />
+                <SectionsCards key={idx} {...service} />
               ))}
             </div>
             <div className="flex flex-col gap-3 w-full sm:flex-row sm:justify-center sm:gap-5">

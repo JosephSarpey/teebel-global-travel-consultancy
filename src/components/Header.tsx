@@ -47,31 +47,31 @@ function Header() {
           >
             <a
               href="#"
-              className="destinations px-5 py-3 border-t-2 border-t-border w-full md:py-7 md:px-5 font-semibold text-secondary hover:text-brand text-center"
+              className="destinations px-5 py-3 border-t-2 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-secondary text-center"
             >
               Destinations
             </a>
             <a
               href="#"
-              className="about px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-secondary hover:text-brand text-center"
+              className="about px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-secondary text-center"
             >
               About Us
             </a>
             <a
               href="#"
-              className="blog px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-secondary hover:text-brand text-center"
+              className="blog px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-secondary text-center"
             >
               Blog
             </a>
             <a
               href="#"
-              className="booking px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-secondary hover:text-brand text-center"
+              className="booking px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-secondary text-center"
             >
               Book A Meeting
             </a>
             <a
               href="#"
-              className="contact px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-secondary hover:text-brand text-center"
+              className="contact px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-secondary text-center"
             >
               Contact Us
             </a>
@@ -82,35 +82,35 @@ function Header() {
             <a
               href="#"
               id="destinations"
-              className="destinations px-5 py-3 md:py-7 md:px-5 font-semibold text-secondary hover:text-brand"
+              className="destinations px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-secondary"
             >
               Destinations
             </a>
             <a
               href="#"
               id="about"
-              className="about px-5 py-3 md:py-7 md:px-5 font-semibold text-secondary hover:text-brand"
+              className="about px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-secondary"
             >
               About Us
             </a>
             <a
               href="#"
               id="blog"
-              className="blog px-5 py-3 md:py-7 md:px-5 font-semibold text-secondary hover:text-brand"
+              className="blog px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-secondary"
             >
               Blog
             </a>
             <a
               href="#"
               id="booking"
-              className="booking px-5 py-3 md:py-7 md:px-5 font-semibold text-secondary hover:text-brand"
+              className="booking px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-secondary"
             >
               Book A Meeting
             </a>
             <a
               href="#"
               id="contact"
-              className="contact px-5 py-3 md:py-7 md:px-5 font-semibold text-secondary hover:text-brand"
+              className="contact px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-secondary"
             >
               Contact Us
             </a>
@@ -121,7 +121,7 @@ function Header() {
             <div className="language relative">
               <button
                 type="button"
-                className="flex items-center text-brand px-2 py-1 rounded hover:bg-muted focus:outline-none"
+                className="flex items-center text-brand px-2 py-1 rounded hover:bg-muted hover:text-secondary focus:outline-none"
               >
                 EN
                 <svg

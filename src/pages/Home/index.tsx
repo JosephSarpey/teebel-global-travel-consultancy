@@ -5,6 +5,7 @@ import AboutPreview from "./AboutPreview";
 import ServicesPreview from "./ServicesPreview";
 import DestinationsHighLight from "./DestinationsHighLight";
 import Testimonials from "./Testimonials";
+import WhyUs from "./WhyUs";
 import ContactUs from "./ContactUs";
 
 function HomePage() {
@@ -16,6 +17,7 @@ function HomePage() {
       <ServicesPreview />
       <DestinationsHighLight />
       <Testimonials />
+      <WhyUs />
       <ContactUs />
       <Footer />
     </>
