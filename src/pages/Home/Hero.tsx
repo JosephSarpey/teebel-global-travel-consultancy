@@ -20,7 +20,7 @@ function Hero() {
             Explore the World with Us
           </h1>
           <h2 className="font-bold text-muted text-lg md:text-2xl text-center md:text-left">
-            T&J Traveling Consultancy – Your Trusted Partner in Travel &
+            TeeBel Global Travel Consultants – Your Trusted Partner in Travel &
             Documentation
           </h2>
           <div>

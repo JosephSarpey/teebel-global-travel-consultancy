@@ -6,7 +6,7 @@ function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row md:justify-between gap-8">
         {/* Brand & Description */}
         <div className="flex-1">
-          <div className="text-2xl font-bold text-brand mb-2">T&J Travel Consultancy</div>
+          <div className="text-2xl font-bold text-brand mb-2">TeeBel Global Travel Consultants</div>
           <p className="text-muted text-sm max-w-xs">
             Your trusted partner for travel, documentation, and global opportunities. We make your journey smooth, secure, and memorable.
           </p>
@@ -39,7 +39,7 @@ function Footer() {
         </div>
       </div>
       <div className="text-center text-xs text-muted py-4 border-t border-border bg-surface">
-        &copy; {new Date().getFullYear()} T&J Travel Consultancy. All rights reserved.
+        &copy; {new Date().getFullYear()} TeeBel Global Travel Consultants. All rights reserved.
       </div>
     </footer>
   );
