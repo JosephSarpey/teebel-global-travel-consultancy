@@ -41,7 +41,7 @@ function ServicesPreview() {
   return (
     <>
       <section className="py-10 md:py-15 bg-background">
-        <div className="max-w-[80%] mx-auto px-4">
+        <div className="max-w-[90%] md:max-w-[80%] mx-auto px-4">
           <div className="m-auto flex flex-col items-center w-full gap-5 h-full px-5 md:px-10">
             <h1 className="text-secondary font-semibold text-sm text-center bg-muted rounded-lg p-2">
               Our Services

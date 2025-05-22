@@ -19,7 +19,7 @@ function SectionSplit({
   mdReverse = false,
   smReverse = false,
   children,
-  className = '',
+  className = "",
 }: Props) {
   return (
     <>
