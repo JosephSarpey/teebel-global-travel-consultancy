@@ -4,7 +4,13 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import HomePage from "./pages/Home";
-import NotFound from "./pages/NotFound";
+import BlogPage from "./pages/Blog";
+import BookingPage from "./pages/Booking";
+import ContactPage from "./pages/Contact";
+import DestinationsPage from "./pages/Destinations";
+import ServicesPage from "./pages/Services";
+import AboutPage from "./pages/About";
+import NotFoundPage from "./pages/NotFound";
 
 const router = createBrowserRouter([
   {
@@ -12,7 +18,13 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { path: "/", element: <HomePage /> },
-      { path: "*", element: <NotFound /> },
+      { path: "/destinations", element: <DestinationsPage />},
+      { path: "/services/", element: <ServicesPage/> }, 
+      { path: "/about/", element: <AboutPage /> },
+      { path: "/contact/", element: <ContactPage />},
+      { path: "/booking/", element: <BookingPage />},
+      { path: "/blog/", element: <BlogPage />},
+      { path: "*", element: <NotFoundPage /> },
     ],
   },
 ]);

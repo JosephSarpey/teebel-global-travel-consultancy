@@ -1,7 +1,7 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
-function DestinationsPage() {
+function ServicesPage() {
   return (
     <>
       <Header />
@@ -10,4 +10,4 @@ function DestinationsPage() {
   );
 }
 
-export default DestinationsPage;
+export default ServicesPage;

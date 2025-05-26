@@ -1,8 +1,8 @@
-function NotFound () {
+function NotFoundPage () {
     return (
         <>
         </>
     )
 }
 
-export default NotFound
+export default NotFoundPage
