@@ -53,27 +53,27 @@ function Header() {
             </a>
             <a
               href="#"
+              className="services px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-secondary text-center"
+            >
+              Services
+            </a>
+            <a
+              href="#"
               className="about px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-secondary text-center"
             >
               About Us
             </a>
             <a
               href="#"
+              className="contact px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-secondary text-center"
+            >
+              Contact
+            </a>
+            <a
+              href="#"
               className="blog px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-secondary text-center"
             >
               Blog
-            </a>
-            <a
-              href="#"
-              className="booking px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-secondary text-center"
-            >
-              Book A Meeting
-            </a>
-            <a
-              href="#"
-              className="contact px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-secondary text-center"
-            >
-              Contact Us
             </a>
           </div>
 
@@ -88,6 +88,13 @@ function Header() {
             </a>
             <a
               href="#"
+              id="services"
+              className="about px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-secondary"
+            >
+              Services
+            </a>
+            <a
+              href="#"
               id="about"
               className="about px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-secondary"
             >
@@ -95,24 +102,17 @@ function Header() {
             </a>
             <a
               href="#"
+              id="contact"
+              className="contact px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-secondary"
+            >
+              Contact
+            </a>
+            <a
+              href="#"
               id="blog"
               className="blog px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-secondary"
             >
               Blog
-            </a>
-            <a
-              href="#"
-              id="booking"
-              className="booking px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-secondary"
-            >
-              Book A Meeting
-            </a>
-            <a
-              href="#"
-              id="contact"
-              className="contact px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-secondary"
-            >
-              Contact Us
             </a>
           </div>
 
