@@ -27,6 +27,7 @@ function Testimonials() {
         title="Testimonials"
         subtitle="What Our Clients Say"
         imgSrc={TestimonialImg}
+        imgClassName="rounded-3xl shadow-xl md:object-contain"
         imgSrcMobile={TestimonialImgMobile}
         mdReverse
         text=""

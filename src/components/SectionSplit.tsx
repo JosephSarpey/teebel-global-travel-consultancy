@@ -8,6 +8,8 @@ type Props = {
   smReverse?: boolean;
   children?: React.ReactNode;
   className?: string;
+  imgClassName?: string;
+  imgMobileClassName?: string;
 };
 
 function SectionSplit({
@@ -20,6 +22,8 @@ function SectionSplit({
   smReverse = false,
   children,
   className = "",
+  imgClassName = "",
+  imgMobileClassName = "",
 }: Props) {
   return (
     <>
@@ -50,13 +54,13 @@ function SectionSplit({
           <img
             src={imgSrcMobile}
             alt={title}
-            className="w-full max-w-full block md:hidden"
+            className={`w-full max-w-full block md:hidden ${imgMobileClassName}`}
           />
           {/* Desktop Image */}
           <img
             src={imgSrc}
             alt={title}
-            className="w-full max-w-full hidden md:block h-full object-cover"
+            className={`w-full max-w-full hidden md:block h-full object-cover ${imgClassName}`}
           />
         </div>
       </section>

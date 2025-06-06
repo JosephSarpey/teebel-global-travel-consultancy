@@ -11,6 +11,7 @@ function ContactUs() {
       subtitle="We’re ready to help you take the first step."
       text=""
       imgSrc={ContactImg}
+        imgClassName="shadow-xl md:object-contain"
       imgSrcMobile={ContactImgMobile}
       mdReverse
     >

@@ -59,6 +59,7 @@ function WhyUs() {
         subtitle=""
         text=""
         imgSrc={HappyClient}
+        imgClassName="shadow-xl md:object-contain"
         imgSrcMobile={HappyClientMobile}
       >
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
