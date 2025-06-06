@@ -1,4 +1,4 @@
-import { Airplay, Briefcase, FileText, ShieldCheck } from "lucide-react";
+import { Airplay, Briefcase, FileText, } from "lucide-react";
 import SectionsCards from "../../components/SectionsCards";
 import Button from "../../components/Button";
 
@@ -20,11 +20,11 @@ const services = [
       "Passport, birth certificate, police report, attestation & more.",
     icon: FileText,
   },
-  {
-    title: "Trusted Guidance",
-    description: "From start to finish, we’re with you through your journey.",
-    icon: ShieldCheck,
-  },
+  // {
+  //   title: "Trusted Guidance",
+  //   description: "From start to finish, we’re with you through your journey.",
+  //   icon: ShieldCheck,
+  // },
 ];
 
 // - Tickets & Visa Assistance
@@ -52,7 +52,7 @@ function ServicesPreview() {
             <h2 className="hidden text-brand font-bold text-3xl md:text-4xl text-center md:block">
               Your Journey, Our Expertise.
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
               {services.map((service, idx) => (
                 <SectionsCards key={idx} {...service} />
               ))}

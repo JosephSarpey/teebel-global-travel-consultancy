@@ -1,32 +1,38 @@
 import { useState } from "react";
 import logo from "../assets/images/t&j-logo-cropped.jpg";
 import Button from "./Button";
+import { Link, useLocation } from "react-router-dom";
+
+const navItems = [
+  { label: "Destinations", path: "/destinations" },
+  { label: "Services", path: "/services" },
+  { label: "About Us", path: "/about" },
+  { label: "Contact", path: "/contact" },
+  { label: "Blog", path: "/blog" },
+];
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
-  const handleMenuToggle = () => {
-    setMenuOpen((prev) => !prev);
-  };
+  const handleMenuToggle = () => setMenuOpen((prev) => !prev);
+  const closeMenu = () => setMenuOpen(false);
 
   return (
     <>
-      <header
-        id="header"
-        className="fixed top-0 left-0 w-full z-50 bg-background"
-      >
+      <header className="fixed top-0 left-0 w-full z-50 bg-background shadow">
         <div className="container m-auto flex justify-between items-center p-3 md:p-0">
           {/* Logo */}
           <div className="name-logo md:w-[20%]">
-            <a href="#" className="logo relative flex w-20">
-              <img src={logo} alt="logo" className="" />
-              <span></span>
-            </a>
+            <Link to="/" className="logo relative flex w-20" onClick={closeMenu}>
+              <img src={logo} alt="T&J Logo" className="w-full h-auto" />
+            </Link>
           </div>
 
           {/* Hamburger Button */}
-          <div
+          <button
             id="menu-btn"
+            aria-label="Toggle menu"
             className={`hamburger md:hidden w-6 h-6 block cursor-pointer focus:outline-none ${
               menuOpen ? "open" : ""
             }`}
@@ -35,90 +41,53 @@ function Header() {
             <span className="hamburger-top"></span>
             <span className="hamburger-middle"></span>
             <span className="hamburger-bottom"></span>
-          </div>
+          </button>
 
-          {/* Navigation Menu for Mobile */}
-          <div
+          {/* Mobile Navigation */}
+          <nav
             id="menu"
-            className={`mobile-nav-menu absolute mt-78 w-full right-0 px-3 flex-col items-center justify-center border-t-border text-center bg-background ${
+            className={`mobile-nav-menu absolute top-full left-0 w-full px-3 flex-col items-center justify-center border-t border-border text-center bg-background transition-all duration-200 ${
               menuOpen ? "flex" : "hidden"
-            }`}
-            onClick={handleMenuToggle}
+            } md:hidden`}
+            onClick={closeMenu}
           >
-            <a
-              href="#"
-              className="destinations px-5 py-3 border-t-2 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-secondary text-center"
-            >
-              Destinations
-            </a>
-            <a
-              href="#"
-              className="services px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-secondary text-center"
-            >
-              Services
-            </a>
-            <a
-              href="#"
-              className="about px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-secondary text-center"
-            >
-              About Us
-            </a>
-            <a
-              href="#"
-              className="contact px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-secondary text-center"
-            >
-              Contact
-            </a>
-            <a
-              href="#"
-              className="blog px-5 py-3 border-t-1 border-t-border w-full md:py-7 md:px-5 font-semibold text-brand hover:text-secondary text-center"
-            >
-              Blog
-            </a>
-          </div>
+            {navItems.map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
+                className={`block px-5 py-3 border-t border-border w-full font-semibold text-brand hover:text-secondary ${
+                  location.pathname === item.path ? "text-secondary" : ""
+                }`}
+              >
+                {item.label}
+              </Link>
+            ))}
+            <div className="py-3">
+              <Button type="button" variant="primary" size="sm" className="w-full">
+                Get Started
+              </Button>
+            </div>
+          </nav>
 
-          {/* PC Navigation Menu */}
-          <div className="desktop-nav-menu hidden md:flex md:justify-between ">
-            <a
-              href="#"
-              id="destinations"
-              className="destinations px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-secondary"
-            >
-              Destinations
-            </a>
-            <a
-              href="#"
-              id="services"
-              className="about px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-secondary"
-            >
-              Services
-            </a>
-            <a
-              href="#"
-              id="about"
-              className="about px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-secondary"
-            >
-              About Us
-            </a>
-            <a
-              href="#"
-              id="contact"
-              className="contact px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-secondary"
-            >
-              Contact
-            </a>
-            <a
-              href="#"
-              id="blog"
-              className="blog px-5 py-3 md:py-7 md:px-5 font-semibold text-brand hover:text-secondary"
-            >
-              Blog
-            </a>
-          </div>
+          {/* Desktop Navigation */}
+          <nav className="desktop-nav-menu hidden md:flex md:justify-between md:items-center">
+            {navItems.map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
+                className={`px-5 py-3 md:py-7 font-semibold text-brand hover:text-secondary transition-colors ${
+                  location.pathname === item.path ? "text-secondary" : ""
+                }`}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
 
-          {/* Other Nav Items */}
+          {/* Right Side: Language & CTA */}
           <div className="hidden md:flex md:items-center md:justify-end md:gap-10 md:w-[20%]">
-            <div className="language relative">
+            {/* Language Switcher */}
+            <div className="language relative group">
               <button
                 type="button"
                 className="flex items-center text-brand px-2 py-1 rounded hover:bg-muted hover:text-secondary focus:outline-none"
@@ -131,36 +100,24 @@ function Header() {
                   strokeWidth="2"
                   viewBox="0 0 24 24"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M19 9l-7 7-7-7"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
               <ul className="absolute right-0 mt-2 w-24 bg-white border rounded shadow-lg z-10 hidden group-hover:block">
                 <li>
-                  <button className="block w-full text-left px-4 py-2 hover:bg-muted">
-                    EN
-                  </button>
+                  <button className="block w-full text-left px-4 py-2 hover:bg-muted">EN</button>
                 </li>
                 <li>
-                  <button className="block w-full text-left px-4 py-2 hover:bg-muted">
-                    FR
-                  </button>
+                  <button className="block w-full text-left px-4 py-2 hover:bg-muted">FR</button>
                 </li>
                 <li>
-                  <button className="block w-full text-left px-4 py-2 hover:bg-muted">
-                    ES
-                  </button>
+                  <button className="block w-full text-left px-4 py-2 hover:bg-muted">ES</button>
                 </li>
               </ul>
             </div>
-            <div className="button">
-              <Button type="button" variant="primary" size="sm">
-                Get Started
-              </Button>
-            </div>
+            <Button type="button" variant="primary" size="sm" className="ml-2">
+              Get Started
+            </Button>
           </div>
         </div>
       </header>
