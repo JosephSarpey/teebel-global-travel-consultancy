@@ -5,12 +5,14 @@ type RegionCardProps = {
   region: string;
   countries: string[];
   image: string;
+  className?: string;
 };
 
 export default function RegionCard({
   region,
   countries,
   image,
+  className = "",
 }: RegionCardProps) {
   const [showCountries, setShowCountries] = useState(false);
 
@@ -18,7 +20,7 @@ export default function RegionCard({
     <Card
       className={`w-[290px] m-auto p-0 cursor-pointer relative overflow-hidden shadow-lg border-0 transition-all duration-300 bg-background transform ${
         showCountries ? "scale-105 z-20" : ""
-      }`}
+      } ${className}`}
       style={{ willChange: "transform" }}
       onMouseEnter={() => setShowCountries(true)}
       onMouseLeave={() => setShowCountries(false)}
@@ -31,6 +33,7 @@ export default function RegionCard({
           className={`w-full h-full object-cover transition-transform duration-300 ${
             showCountries ? "scale-120" : ""
           }`}
+          loading="lazy"
         />
         {/* Overlay for hover */}
         <div
