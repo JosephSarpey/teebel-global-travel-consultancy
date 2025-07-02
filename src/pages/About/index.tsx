@@ -1,5 +1,7 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import { FaGlobeAmericas, FaRegLightbulb, FaRegThumbsUp } from "react-icons/fa";
+import { MdSupportAgent } from "react-icons/md";
 
 // Use your own images from /src/assets/images/
 const team = [
@@ -34,7 +36,7 @@ function AboutPage() {
           loading="eager"
         />
         <div className="container mx-auto px-4 relative z-20 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">About T&J Traveling Consultancy</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">About TeeBel Global Travel Consultancy</h1>
           <p className="text-xl md:text-2xl font-medium text-accent mb-8">
             Your Journey, Our Passion
           </p>
@@ -47,7 +49,7 @@ function AboutPage() {
         <div className="container mx-auto px-4 text-center max-w-3xl">
           <h2 className="text-3xl md:text-4xl font-bold text-brand mb-4">Who We Are</h2>
           <p className="text-lg md:text-xl text-muted-foreground mb-6">
-            T&J Traveling Consultancy is dedicated to making your travel dreams a reality. With years of experience and a passion for exploration, we provide expert guidance, personalized itineraries, and seamless travel experiences for adventurers and families alike.
+            TeeBel Global Travel Consultancy is dedicated to making your travel dreams a reality. With years of experience and a passion for exploration, we provide expert guidance, personalized itineraries, and seamless travel experiences for adventurers and families alike.
           </p>
         </div>
       </section>
@@ -57,59 +59,39 @@ function AboutPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <h3 className="text-2xl md:text-3xl font-semibold text-brand mb-4 text-center">Our Story</h3>
           <p className="text-lg md:text-xl text-muted-foreground text-center">
-            Founded in 2015, T&J Traveling Consultancy started as a small team of passionate travelers. Over the years, we have grown into a trusted partner for hundreds of clients, helping them discover the world’s most beautiful destinations with ease and confidence.
+            Founded in 2025, TeeBel Global Travel Consultancy started as a small team of passionate travelers. Over the years, we have grown into a trusted partner for hundreds of clients, helping them discover the world’s most beautiful destinations with ease and confidence.
           </p>
         </div>
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h3 className="text-3xl md:text-4xl font-bold text-brand mb-8 text-center">Why Choose Us</h3>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
-            <div className="bg-brand/10 rounded-xl p-6 text-center shadow flex flex-col items-center">
-              <img
-                src="/src/assets/images/global-consultation.png"
-                alt="Global Expertise"
-                className="w-16 h-16 mx-auto mb-4"
-                loading="lazy"
-              />
-              <h4 className="font-bold text-brand mb-2">Global Expertise</h4>
-              <p className="text-gray-700">Our team has traveled extensively and brings firsthand knowledge to every itinerary.</p>
-            </div>
-            <div className="bg-brand/10 rounded-xl p-6 text-center shadow flex flex-col items-center">
-              <img
-                src="/src/assets/images/travel-with-passport.png"
-                alt="Personalized Service"
-                className="w-16 h-16 mx-auto mb-4"
-                loading="lazy"
-              />
-              <h4 className="font-bold text-brand mb-2">Personalized Service</h4>
-              <p className="text-gray-700">Every trip is tailored to your unique interests, budget, and schedule.</p>
-            </div>
-            <div className="bg-brand/10 rounded-xl p-6 text-center shadow flex flex-col items-center">
-              <img
-                src="/src/assets/images/global-document-exchange.png"
-                alt="Expert Guidance"
-                className="w-16 h-16 mx-auto mb-4"
-                loading="lazy"
-              />
-              <h4 className="font-bold text-brand mb-2">Expert Guidance</h4>
-              <p className="text-gray-700">We handle all the details, so you can focus on enjoying your journey.</p>
-            </div>
-            <div className="bg-brand/10 rounded-xl p-6 text-center shadow flex flex-col items-center">
-              <img
-                src="/src/assets/images/traveler-at-airport.png"
-                alt="Trusted by Travelers"
-                className="w-16 h-16 mx-auto mb-4"
-                loading="lazy"
-              />
-              <h4 className="font-bold text-brand mb-2">Trusted by Travelers</h4>
-              <p className="text-gray-700">Our clients return to us year after year for memorable travel experiences.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+<section className="py-16 bg-white">
+  <div className="container mx-auto px-4">
+    <h3 className="text-3xl md:text-4xl font-bold text-brand mb-8 text-center">Why Choose Us</h3>
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+      <div className="bg-brand/10 rounded-xl p-6 text-center shadow flex flex-col items-center">
+        <FaGlobeAmericas className="w-16 h-16 text-brand mb-4" />
+        <h4 className="font-bold text-brand mb-2">Global Expertise</h4>
+        <p className="text-gray-700">Our team has traveled extensively and brings firsthand knowledge to every itinerary.</p>
+      </div>
+      <div className="bg-brand/10 rounded-xl p-6 text-center shadow flex flex-col items-center">
+        <MdSupportAgent className="w-16 h-16 text-brand mb-4" />
+        <h4 className="font-bold text-brand mb-2">Personalized Service</h4>
+        <p className="text-gray-700">Every trip is tailored to your unique interests, budget, and schedule.</p>
+      </div>
+      <div className="bg-brand/10 rounded-xl p-6 text-center shadow flex flex-col items-center">
+        <FaRegLightbulb className="w-16 h-16 text-brand mb-4" />
+        <h4 className="font-bold text-brand mb-2">Expert Guidance</h4>
+        <p className="text-gray-700">We handle all the details, so you can focus on enjoying your journey.</p>
+      </div>
+      <div className="bg-brand/10 rounded-xl p-6 text-center shadow flex flex-col items-center">
+        <FaRegThumbsUp className="w-16 h-16 text-brand mb-4" />
+        <h4 className="font-bold text-brand mb-2">Trusted by Travelers</h4>
+        <p className="text-gray-700">Our clients return to us year after year for memorable travel experiences.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Meet the Team */}
       <section className="py-16 bg-muted/10">

@@ -1,4 +1,5 @@
-import { Airplay, Briefcase, FileText, } from "lucide-react";
+import { Airplay, Briefcase, FileText } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import SectionsCards from "../../components/SectionsCards";
 import Button from "../../components/Button";
 
@@ -37,50 +38,53 @@ const services = [
 // - Certificate Attestation & Documentaries
 // - Hotel Reservations
 
+
 function ServicesPreview() {
+  const navigate = useNavigate();
+
   return (
-    <>
-      <section className="py-15 md:pt-30 bg-background">
-        <div className="max-w-[90%] md:max-w-[80%] mx-auto px-4">
-          <div className="m-auto flex flex-col items-center w-full gap-5 h-full px-5 md:px-10">
-            <h1 className="text-secondary font-semibold text-sm text-center bg-muted rounded-lg p-2">
-              Our Services
-            </h1>
-            <h2 className="text-brand font-bold text-2xl md:text-4xl text-center md:hidden">
-              Expert Travel Support
-            </h2>
-            <h2 className="hidden text-brand font-bold text-3xl md:text-4xl text-center md:block">
-              Your Journey, Our Expertise.
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-              {services.map((service, idx) => (
-                <SectionsCards key={idx} {...service} />
-              ))}
+    <section className="py-15 md:pt-30 bg-background">
+      <div className="max-w-[90%] md:max-w-[80%] mx-auto px-4">
+        <div className="m-auto flex flex-col items-center w-full gap-5 h-full px-5 md:px-10">
+          <h1 className="text-secondary font-semibold text-sm text-center bg-muted rounded-lg p-2">
+            Our Services
+          </h1>
+          <h2 className="text-brand font-bold text-2xl md:text-4xl text-center md:hidden">
+            Expert Travel Support
+          </h2>
+          <h2 className="hidden text-brand font-bold text-3xl md:text-4xl text-center md:block">
+            Your Journey, Our Expertise.
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {services.map((service, idx) => (
+              <SectionsCards key={idx} {...service} />
+            ))}
+          </div>
+          <div className="flex flex-col gap-3 w-full sm:flex-row sm:justify-center sm:gap-5">
+            <div className="button">
+              <Button
+                variant="outline"
+                size="responsive"
+                className="w-full sm:w-auto"
+                onClick={() => navigate('/services')}
+              >
+                Explore Services
+              </Button>
             </div>
-            <div className="flex flex-col gap-3 w-full sm:flex-row sm:justify-center sm:gap-5">
-              <div className="button">
-                <Button
-                  variant="outline"
-                  size="responsive"
-                  className="w-full sm:w-auto"
-                >
-                  Explore Services
-                </Button>
-              </div>
-              <div className="button">
-                <Button
-                  variant="primary"
-                  size="responsive"
-                  className="w-full sm:w-auto hover:bg-muted hover:text-secondary"
-                >
-                  Contact Us
-                </Button>
-              </div>
+            <div className="button">
+              <Button
+                variant="primary"
+                size="responsive"
+                className="w-full sm:w-auto hover:bg-muted hover:text-secondary"
+                onClick={() => navigate('/contact')}
+              >
+                Contact Us
+              </Button>
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
 
