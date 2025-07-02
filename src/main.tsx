@@ -11,6 +11,7 @@ import DestinationsPage from "./pages/Destinations";
 import ServicesPage from "./pages/Services";
 import AboutPage from "./pages/About";
 import NotFoundPage from "./pages/NotFound";
+import ConsultationPage from "./pages/Consultation";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
       { path: "/about/", element: <AboutPage /> },
       { path: "/contact/", element: <ContactPage />},
       { path: "/booking/", element: <BookingPage />},
+      { path: "/book-consultation/", element: <ConsultationPage />},
       { path: "/blog/", element: <BlogPage />},
       { path: "*", element: <NotFoundPage /> },
     ],

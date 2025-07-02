@@ -7,6 +7,7 @@ import europeImg from "../../assets/images/europe.jpg";
 import africaImg from "../../assets/images/africa.jpg";
 import naImg from "../../assets/images/north-america.jpg";
 import worldMap from "../../assets/images/world-map.jpg";
+import { FaSearch } from 'react-icons/fa';
 
 interface Region {
   region: string;
@@ -146,7 +147,7 @@ function DestinationsPage() {
                 }}
                 aria-label="Search destinations"
               >
-                Search
+                <FaSearch className="h-5 w-5" />
               </button>
             </div>
             
