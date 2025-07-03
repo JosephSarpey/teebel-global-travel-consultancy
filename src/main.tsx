@@ -12,6 +12,8 @@ import ServicesPage from "./pages/Services";
 import AboutPage from "./pages/About";
 import NotFoundPage from "./pages/NotFound";
 import ConsultationPage from "./pages/Consultation";
+import PaymentPage from "./pages/Payment";
+import DocumentForm from "./pages/DocumentForm";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +28,8 @@ const router = createBrowserRouter([
       { path: "/booking/", element: <BookingPage />},
       { path: "/book-consultation/", element: <ConsultationPage />},
       { path: "/blog/", element: <BlogPage />},
+      { path: "/payment", element: <PaymentPage /> },
+      { path: "/document-form", element: <DocumentForm /> },
       { path: "*", element: <NotFoundPage /> },
     ],
   },

@@ -1,7 +1,14 @@
 import Button from "../../components/Button";
 import heroImg from "../../assets/images/traveler-at-airport.png"; // adjust path if needed
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
+  const navigate = useNavigate();
+
+  const handlePickForm = () => {
+    navigate('/payment');
+  };
+
   return (
     <section className="hero w-full min-h-[60vh] md:h-screen bg-surface flex flex-col md:flex-row">
       {/* Image for mobile */}
@@ -23,9 +30,13 @@ function Hero() {
             TeeBel Global Travel Consultants – Your Trusted Partner in Travel &
             Documentation
           </h2>
-          <div>
-            <Button variant="primary" size="md">
-              Get Started
+          <div className="button">
+            <Button 
+              variant="primary" 
+              size="md"
+              onClick={handlePickForm}
+            >
+              Start Your Application
             </Button>
           </div>
         </div>
