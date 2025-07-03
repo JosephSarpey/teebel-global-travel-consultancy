@@ -76,7 +76,7 @@ const PricingComparison = () => {
             <h3 className="text-xl font-bold text-gray-900">{tier.name}</h3>
             <p className="mt-2 text-gray-600">{tier.description}</p>
             <div className="mt-4">
-              <span className="text-4xl font-bold text-brand">${tier.price}</span>
+              <span className="text-4xl font-bold text-brand">₵{tier.price}</span>
               <span className="text-gray-500">/application</span>
             </div>
             <ul className="mt-6 space-y-3">
@@ -141,13 +141,13 @@ const PricingComparison = () => {
             <div className="text-right">
               <p className="text-sm text-gray-500">Price per application</p>
               <p className="text-2xl font-bold text-brand">
-                ${pricingTiers.find((t) => t.name === selectedTier)?.price}
+              ₵{pricingTiers.find((t) => t.name === selectedTier)?.price}
               </p>
             </div>
             <div className="text-right">
               <p className="text-sm text-gray-500">Total</p>
               <p className="text-3xl font-bold text-brand">
-                ${(pricingTiers.find((t) => t.name === selectedTier)?.price || 0) * numberOfPeople}
+                ₵{(pricingTiers.find((t) => t.name === selectedTier)?.price || 0) * numberOfPeople}
               </p>
             </div>
             <button className="px-6 py-3 bg-brand text-white font-medium rounded-md hover:bg-brand/90 transition-colors">
