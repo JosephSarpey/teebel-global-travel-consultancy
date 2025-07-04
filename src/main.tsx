@@ -15,6 +15,7 @@ import ConsultationPage from "./pages/Consultation";
 import PaymentPage from "./pages/Payment";
 import DocumentForm from "./pages/DocumentForm";
 
+
 const router = createBrowserRouter([
   {
     path: "/",
